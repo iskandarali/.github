@@ -1,10 +1,14 @@
----
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ''
+name: Issues
 
----
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  issues: write
+
+jobs:
+  help-wanted:
+    uses: laravel/.github/.github/workflows/issues.yml@main
 
 
